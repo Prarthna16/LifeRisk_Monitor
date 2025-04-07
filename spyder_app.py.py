@@ -402,7 +402,7 @@ with st.sidebar:
 # Home Page
 if choice == "Home":
     st.markdown("<div class='page-header'><div class='logo-container'>❤️</div><h1 class='big-font'>Welcome to LifeRisk Monitor</h1></div>", unsafe_allow_html=True)
-    st.image(r"C:\Users\shail\Downloads\final year project pkl\health_banner.jpg", use_container_width=True)
+    st.image("images/health_banner.jpg", use_container_width=True)
     
     st.markdown("<div class='content-card'>", unsafe_allow_html=True)
     st.markdown("<h2 class='card-title'>Your Digital Health Companion</h2>", unsafe_allow_html=True)
@@ -477,7 +477,7 @@ elif choice == "About Diabetes":
         st.markdown("</div>", unsafe_allow_html=True)
     
     with col2:
-        st.image(r"C:\Users\shail\Downloads\final year project pkl\diabetes_info.jpg", use_container_width=True)
+        st.image("images/diabetes_info.jpg", use_container_width=True)
 
     # Types of Diabetes 
     st.markdown("<div class='content-card'>", unsafe_allow_html=True)
@@ -653,17 +653,17 @@ elif choice == "Ayurvedic Solutions":
 
     with col1:
         st.markdown("<h3>Vata</h3>", unsafe_allow_html=True)
-        st.image(r"C:\Users\shail\Downloads\final year project pkl\vata_symbol.jpeg", width=100)
+        st.image("images/vata_symbol.jpeg", width=100)
         st.markdown("<p class='medium-font'>Represents air and space elements. People with dominant Vata tend to be thin, creative, and energetic when balanced, but anxious and irregular when imbalanced.</p>", unsafe_allow_html=True)
 
     with col2:
         st.markdown("<h3>Pitta</h3>", unsafe_allow_html=True)
-        st.image(r"C:\Users\shail\Downloads\final year project pkl\pitta_symbol.jpeg", width=100)
+        st.image("images/pitta_symbol.jpeg", width=100)
         st.markdown("<p class='medium-font'>Represents fire and water elements. Pitta-dominant individuals are often athletic, intelligent, and driven when balanced, but irritable and inflamed when imbalanced.</p>", unsafe_allow_html=True)
 
     with col3:
         st.markdown("<h3>Kapha</h3>", unsafe_allow_html=True)
-        st.image(r"C:\Users\shail\Downloads\final year project pkl\kapha_symbol.jpeg", width=100)
+        st.image("images/kapha_symbol.jpeg", width=100)
         st.markdown("<p class='medium-font'>Represents earth and water elements. Kapha types are typically strong, calm, and loyal when balanced, but can become overweight and lethargic when imbalanced.</p>", unsafe_allow_html=True)
 
     st.markdown("</div>", unsafe_allow_html=True)
@@ -678,19 +678,19 @@ elif choice == "Ayurvedic Solutions":
        st.markdown("<h3>Herbal Remedies</h3>", unsafe_allow_html=True)
 
     # Bitter Gourd
-    st.image(r"C:\Users\shail\Downloads\final year project pkl\bittergourd.jpg", width=100)
+    st.image("images/bittergourd.jpg", width=100)
     st.markdown("<p class='medium-font'><strong>Bitter Gourd (Karela):</strong> Contains insulin-like compounds that help reduce blood glucose levels.</p>", unsafe_allow_html=True)
 
     # Fenugreek
-    st.image(r"C:\Users\shail\Downloads\final year project pkl\fenugreek.jpg", width=100)
+    st.image("images/fenugreek.jpg", width=100)
     st.markdown("<p class='medium-font'><strong>Fenugreek (Methi):</strong> Seeds contain fiber that helps slow digestion and absorption of carbohydrates.</p>", unsafe_allow_html=True)
 
     # Turmeric
-    st.image(r"C:\Users\shail\Downloads\final year project pkl\turmeric.jpg", width=100)
+    st.image("images/turmeric.jpg", width=100)
     st.markdown("<p class='medium-font'><strong>Turmeric:</strong> Contains curcumin, which may help improve insulin sensitivity.</p>", unsafe_allow_html=True)
 
     # Gymnema Sylvestre
-    st.image(r"C:\Users\shail\Downloads\final year project pkl\gymnema.jpeg", width=100)
+    st.image("images/gymnema.jpeg", width=100)
     st.markdown("<p class='medium-font'><strong>Gymnema Sylvestre (Gurmar):</strong> Known as 'sugar destroyer,' it may help reduce sugar cravings and improve glucose uptake.</p>", unsafe_allow_html=True)
 
 
@@ -702,7 +702,7 @@ elif choice == "Ayurvedic Solutions":
     st.markdown("<p class='medium-font'>• Regular physical activity like yoga and walking<br>• Practice pranayama (breathing exercises) daily<br>• Maintain regular eating and sleeping schedule<br>• Stress management through meditation</p>", unsafe_allow_html=True)
 
     with col2:
-        st.image(r"C:\Users\shail\Downloads\final year project pkl\ayurveda.jpg", use_container_width=True)
+        st.image("images/ayurveda.jpg", use_container_width=True)
 
     st.markdown("</div>", unsafe_allow_html=True)
 
@@ -713,7 +713,7 @@ elif choice == "Ayurvedic Solutions":
     col1, col2 = st.columns([1, 3])
 
     with col1:
-        st.image(r"C:\Users\shail\Downloads\final year project pkl\heart_ayurveda.jpg", use_container_width=True)
+        st.image("images/heart_ayurveda.jpg", use_container_width=True)
 
     with col2:
         st.markdown("<h3>Herbal Remedies</h3>", unsafe_allow_html=True)
@@ -731,13 +731,13 @@ elif choice == "Ayurvedic Solutions":
         col1, col2 = st.columns(2)
         
         with col1:
-            st.image(r"C:\Users\shail\Downloads\final year project pkl\vajrasana.jpg", caption="Vajrasana (Thunderbolt Pose)", use_container_width=True)
-            st.image(r"C:\Users\shail\Downloads\final year project pkl\dhanurasana.jpeg", caption="Dhanurasana (Bow Pose)", use_container_width=True)
-            st.image(r"C:\Users\shail\Downloads\final year project pkl\pawanmuktasana.jpg", caption="Pawanmuktasana (Wind-Relieving Pose)", use_container_width=True)
+            st.image("images/vajrasana.jpg", caption="Vajrasana (Thunderbolt Pose)", use_container_width=True)
+            st.image("images/dhanurasana.jpeg", caption="Dhanurasana (Bow Pose)", use_container_width=True)
+            st.image("images/pawanmuktasana.jpg", caption="Pawanmuktasana (Wind-Relieving Pose)", use_container_width=True)
         
         with col2:
-            st.image(r"C:\Users\shail\Downloads\final year project pkl\shavasana.jpeg", caption="Shavasana (Corpse Pose)", use_container_width=True)
-            st.image(r"C:\Users\shail\Downloads\final year project pkl\bhujangasana.jpg", caption="Bhujangasana (Cobra Pose)", use_container_width=True)
+            st.image("images/shavasana.jpeg", caption="Shavasana (Corpse Pose)", use_container_width=True)
+            st.image("images/bhujangasana.jpg", caption="Bhujangasana (Cobra Pose)", use_container_width=True)
 
     st.markdown("</div>", unsafe_allow_html=True)
 
@@ -761,7 +761,7 @@ elif choice == "Heart Health":
         st.markdown("</div>", unsafe_allow_html=True)
 
     with col2:
-        st.image(r"C:\Users\shail\Downloads\final year project pkl\heart_anatomy.jpg", use_container_width=True)
+        st.image("images/heart_anatomy.jpg", use_container_width=True)
 
     # Risk Factors
     st.markdown("<div class='content-card'>", unsafe_allow_html=True)
@@ -830,7 +830,7 @@ elif choice == "Healthy Recipes":
         st.markdown("<div class='recipe-container'>", unsafe_allow_html=True)
         col1, col2 = st.columns([1, 3])
         with col1:
-            st.image(r"C:\Users\shail\Downloads\final year project pkl\oatmeal.jpg", use_container_width=True)
+            st.image("images/oatmeal.jpg", use_container_width=True)
         with col2:
             st.markdown("<h3>Cinnamon & Berries Overnight Oats</h3>", unsafe_allow_html=True)
             st.markdown("<p><strong>Ingredients:</strong> 1/2 cup rolled oats, 1 tablespoon chia seeds, 3/4 cup unsweetened almond milk, 1/2 teaspoon cinnamon, 1/2 cup mixed berries, 1 tablespoon chopped nuts, 1 teaspoon honey (optional)</p>", unsafe_allow_html=True)
@@ -842,7 +842,7 @@ elif choice == "Healthy Recipes":
         st.markdown("<div class='recipe-container'>", unsafe_allow_html=True)
         col1, col2 = st.columns([1, 3])
         with col1:
-            st.image(r"C:\Users\shail\Downloads\final year project pkl\veggie_omelette.jpg", use_container_width=True)
+            st.image("images/veggie_omelette.jpg", use_container_width=True)
         with col2:
             st.markdown("<h3>Vegetable-Packed Omelette</h3>", unsafe_allow_html=True)
             st.markdown("<p><strong>Ingredients:</strong> 2 eggs, 1/4 cup chopped bell peppers, 1/4 cup spinach, 2 tablespoons chopped onions, 1 tablespoon olive oil, 1/4 avocado (sliced), Salt and pepper to taste</p>", unsafe_allow_html=True)
@@ -857,7 +857,7 @@ elif choice == "Healthy Recipes":
         st.markdown("<div class='recipe-container'>", unsafe_allow_html=True)
         col1, col2 = st.columns([1, 3])
         with col1:
-            st.image(r"C:\Users\shail\Downloads\final year project pkl\quinoa_salad.jpg", use_container_width=True)
+            st.image("images/quinoa_salad.jpg", use_container_width=True)
         with col2:
             st.markdown("<h3>Mediterranean Quinoa Bowl</h3>", unsafe_allow_html=True)
             st.markdown("<p><strong>Ingredients:</strong> 1/2 cup cooked quinoa, 1 cup mixed greens, 1/4 cup cucumber (diced), 1/4 cup cherry tomatoes (halved), 2 tablespoons red onion (diced), 2 tablespoons kalamata olives, 2 tablespoons feta cheese, 1 tablespoon olive oil, 1 tablespoon lemon juice, 1 teaspoon dried oregano</p>", unsafe_allow_html=True)
@@ -869,7 +869,7 @@ elif choice == "Healthy Recipes":
         st.markdown("<div class='recipe-container'>", unsafe_allow_html=True)
         col1, col2 = st.columns([1, 3])
         with col1:
-            st.image(r"C:\Users\shail\Downloads\final year project pkl\lentil_soup.jpg", use_container_width=True)
+            st.image("images/lentil_soup.jpg", use_container_width=True)
         with col2:
             st.markdown("<h3>Spiced Lentil & Vegetable Soup</h3>", unsafe_allow_html=True)
             st.markdown("<p><strong>Ingredients:</strong> 1 cup red lentils, 1 onion (chopped), 2 carrots (diced), 2 celery stalks (diced), 2 cloves garlic (minced), 1 teaspoon cumin, 1/2 teaspoon turmeric, 4 cups vegetable broth, 1 tablespoon olive oil, 1 cup spinach, Salt and pepper to taste</p>", unsafe_allow_html=True)
@@ -884,7 +884,7 @@ elif choice == "Healthy Recipes":
         st.markdown("<div class='recipe-container'>", unsafe_allow_html=True)
         col1, col2 = st.columns([1, 3])
         with col1:
-            st.image(r"C:\Users\shail\Downloads\final year project pkl\baked_salmon.jpg", use_container_width=True)
+            st.image("images/baked_salmon.jpg", use_container_width=True)
         with col2:
             st.markdown("<h3>Herb-Crusted Baked Salmon with Roasted Vegetables</h3>", unsafe_allow_html=True)
             st.markdown("<p><strong>Ingredients:</strong> 4 oz salmon fillet, 1 tablespoon olive oil, 1 tablespoon fresh herbs (dill, parsley, thyme), 1 clove garlic (minced), 1 cup mixed vegetables (broccoli, bell peppers, zucchini), 1/2 lemon, Salt and pepper to taste</p>", unsafe_allow_html=True)
@@ -896,7 +896,7 @@ elif choice == "Healthy Recipes":
         st.markdown("<div class='recipe-container'>", unsafe_allow_html=True)
         col1, col2 = st.columns([1, 3])
         with col1:
-            st.image(r"C:\Users\shail\Downloads\final year project pkl\chickpea_curry.jpg", use_container_width=True)
+            st.image("images/chickpea_curry.jpg", use_container_width=True)
         with col2:
             st.markdown("<h3>Vegetable and Chickpea Curry with Brown Rice</h3>", unsafe_allow_html=True)
             st.markdown("<p><strong>Ingredients:</strong> 1 cup chickpeas (cooked), 1 onion (chopped), 2 cloves garlic (minced), 1 inch ginger (grated), 1 tablespoon curry powder, 1/2 teaspoon turmeric, 1 cup mixed vegetables (cauliflower, peas, carrots), 1 cup low-fat coconut milk, 1/2 cup vegetable broth, 1/2 cup brown rice (cooked), Fresh cilantro</p>", unsafe_allow_html=True)
@@ -911,7 +911,7 @@ elif choice == "Healthy Recipes":
         st.markdown("<div class='recipe-container'>", unsafe_allow_html=True)
         col1, col2 = st.columns([1, 3])
         with col1:
-            st.image(r"C:\Users\shail\Downloads\final year project pkl\greek_yogurt.jpg", use_container_width=True)
+            st.image("images/greek_yogurt.jpg", use_container_width=True)
         with col2:
             st.markdown("<h3>Greek Yogurt with Nuts and Berries</h3>", unsafe_allow_html=True)
             st.markdown("<p><strong>Ingredients:</strong> 1/2 cup plain Greek yogurt, 1 tablespoon mixed nuts (almonds, walnuts), 1/4 cup mixed berries, 1/2 teaspoon cinnamon, 1 teaspoon chia seeds</p>", unsafe_allow_html=True)
@@ -923,7 +923,7 @@ elif choice == "Healthy Recipes":
         st.markdown("<div class='recipe-container'>", unsafe_allow_html=True)
         col1, col2 = st.columns([1, 3])
         with col1:
-            st.image(r"C:\Users\shail\Downloads\final year project pkl\hummus.jpg", use_container_width=True)
+            st.image("images/hummus.jpg", use_container_width=True)
         with col2:
             st.markdown("<h3>Vegetable Sticks with Homemade Hummus</h3>", unsafe_allow_html=True)
             st.markdown("<p><strong>Ingredients:</strong> 1 cup chickpeas (cooked), 2 tablespoons tahini, 1 clove garlic, 2 tablespoons lemon juice, 1 tablespoon olive oil, 1/2 teaspoon cumin, Salt to taste, Assorted vegetable sticks (carrots, cucumbers, bell peppers, celery)</p>", unsafe_allow_html=True)
@@ -938,7 +938,7 @@ elif choice == "Healthy Recipes":
         st.markdown("<div class='recipe-container'>", unsafe_allow_html=True)
         col1, col2 = st.columns([1, 3])
         with col1:
-            st.image(r"C:\Users\shail\Downloads\final year project pkl\chia_pudding.jpg", use_container_width=True)
+            st.image("images/chia_pudding.jpg", use_container_width=True)
         with col2:
             st.markdown("<h3>Vanilla Chia Seed Pudding</h3>", unsafe_allow_html=True)
             st.markdown("<p><strong>Ingredients:</strong> 2 tablespoons chia seeds, 1/2 cup unsweetened almond milk, 1/4 teaspoon vanilla extract, 1 teaspoon honey (optional), 1/4 cup fresh fruit for topping</p>", unsafe_allow_html=True)
@@ -950,7 +950,7 @@ elif choice == "Healthy Recipes":
         st.markdown("<div class='recipe-container'>", unsafe_allow_html=True)
         col1, col2 = st.columns([1, 3])
         with col1:
-            st.image(r"C:\Users\shail\Downloads\final year project pkl\baked_apple.jpg", use_container_width=True)
+            st.image("images/baked_apple.jpg", use_container_width=True)
         with col2:
             st.markdown("<h3>Cinnamon Baked Apples</h3>", unsafe_allow_html=True)
             st.markdown("<p><strong>Ingredients:</strong> 1 apple, 1 teaspoon cinnamon, 1 tablespoon chopped walnuts, 1 teaspoon honey (optional), 1/4 cup water</p>", unsafe_allow_html=True)
