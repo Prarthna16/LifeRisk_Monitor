@@ -6,16 +6,16 @@ import random
 
 # --- Backend Functions (No Changes) ---
 def diabetes_prediction(input_data):
-    diabetes_model = joblib.load(r"C:\Users\shail\Downloads\final year project pkl\lgb_model_updated.pkl")
-    scaler = joblib.load(r"C:\Users\shail\Downloads\final year project pkl\scaler_updated.pkl")
+    diabetes_model = joblib.load("models/lgb_model_updated.pkl")
+    scaler = joblib.load("models/scaler_updated.pkl")
     input_data_scaled = scaler.transform(np.array(input_data).reshape(1, -1))
     prediction = diabetes_model.predict(input_data_scaled)[0]
     prob_diabetic = diabetes_model.predict_proba(input_data_scaled)[0][1] if hasattr(diabetes_model, "predict_proba") else None
     return ("Diabetic" if prediction == 1 else "Non-Diabetic"), prob_diabetic
 
 def heart_prediction(input_data):
-    heart_model = joblib.load(r"C:\Users\shail\Downloads\final year project pkl\heart_lgb_updated.pkl")
-    scaler = joblib.load(r"C:\Users\shail\Downloads\final year project pkl\scaler_heart_updated.pkl")
+    heart_model = joblib.load("models/heart_lgb_updated.pkl")
+    scaler = joblib.load("models/scaler_heart_updated.pkl")
     input_data_scaled = scaler.transform(np.array(input_data).reshape(1, -1))
     prediction_prob = heart_model.predict_proba(input_data_scaled)[0][1]
     return "High Risk" if prediction_prob >= 0.5 else "Low Risk"
@@ -723,7 +723,7 @@ elif choice == "Ayurvedic Solutions":
         st.markdown("<p class='medium-font'>• Include heart-healthy fats like ghee in moderation<br>• Consume plenty of fresh fruits and vegetables<br>• Include whole grains and legumes<br>• Add spices like turmeric, ginger, and cinnamon<br>• Limit salt, processed foods, and heavy meals</p>", unsafe_allow_html=True)
 
         st.markdown("<h3>Yoga for Heart Health</h3>", unsafe_allow_html=True)
-        st.image(r"C:\Users\shail\Downloads\final year project pkl\yoga.jpg", use_container_width=True)
+        st.image("images/yoga.jpg", use_container_width=True)
         st.markdown("<p class='medium-font'>• Vajrasana (Thunderbolt Pose)<br>• Dhanurasana (Bow Pose)<br>• Pawanmuktasana (Wind-Relieving Pose)<br>• Shavasana (Corpse Pose)<br>• Heart-opening poses like Bhujangasana (Cobra Pose)</p>", unsafe_allow_html=True)
 
         # Add yoga pose images
